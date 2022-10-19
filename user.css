@@ -31,7 +31,7 @@ input {
 }
 
 .main-playButton-PlayButton.main-playButton-primary {
-    color: white;
+    color: var(--spice-main);
 }
 
 .connect-title, .connect-header {
