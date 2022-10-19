@@ -132,7 +132,7 @@ div.GlueDropTarget.personal-library >*.active {
 
 .main-playPauseButton-button {
     background-color: var(--spice-button);
-    color: white;
+    color: var(--spice-main);
 }
 
 /** Queue page header */
