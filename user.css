@@ -3,8 +3,16 @@
     --teal5: #99FFDD;
     --blue1: #1F2533;
     --blue2: #3D4B66;
+    --blueGray5: #CCDDFF;
     --redBright5: #FF6666;
-    ---overlay1: #3D4B66;
+    --red5: #FF9999;
+    --orangeBright5: #FF9966;
+    --yellowBright5: #FFDD99;
+    --green5: #99FF99;
+    --cyan5: #99DDFF;
+    --cyanGray5: #CCEEFF;
+    --blue5: #99BBFF;
+    --pink5: #FF99DD;
 }
 
 /* Buttons */
@@ -77,7 +85,7 @@
 
 .os-theme-spotify.os-host-transition>.os-scrollbar-horizontal>.os-scrollbar-track>.os-scrollbar-handle,
 .os-theme-spotify.os-host-transition>.os-scrollbar-vertical>.os-scrollbar-track>.os-scrollbar-handle {
-    background-color: var(--decorative-base);
+    background-color: var(--blue2);
     border-radius: 6px;
 }
 
@@ -124,7 +132,7 @@
 
 /* Settings */
 input:checked~.x-toggle-indicatorWrapper {
-    background-color: var(---overlay1);
+    background-color: var(--blue2);
 }
 
 input:hover:not([disabled]):not(:active)~.x-toggle-indicatorWrapper {
