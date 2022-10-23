@@ -1,180 +1,244 @@
 :root {
-    --player-bar-height: 105px;
+    --purple5: #9999FF;
+    --teal5: #99FFDD;
+    --blue1: #1F2533;
+    --blue2: #3D4B66;
+    --redBright5: #FF6666;
+    ---overlay1: #3D4B66;
 }
 
-.main-rootlist-rootlistDividerGradient {
-    background: unset;
-}
-
-input {
-    background-color: unset !important;
-    border-bottom: solid 1px var(--spice-text) !important;
-    border-radius: 0 !important;
-    padding: 6px 10px 6px 48px;
-    color: var(--spice-text) !important;
-}
-
-.x-searchInput-searchInputSearchIcon,
-.x-searchInput-searchInputClearButton {
-    color: var(--spice-text) !important;
-}
-
-.main-home-homeHeader,
-.x-entityHeader-overlay,
-.x-actionBarBackground-background,
-.main-actionBarBackground-background,
-.main-entityHeader-overlay,
-.main-entityHeader-backgroundColor
-{
-    background-color: unset !important;
-    background-image: unset !important;
-}
-
+/* Buttons */
 .main-playButton-PlayButton.main-playButton-primary {
-    color: var(--spice-main);
+    color: var(--spice-player);
 }
 
-.connect-title, .connect-header {
-    display: none;
-}
-
-.connect-device-list {
-    margin: 0px -5px;
-}
-
-/* Remove Topbar background colour */
-.main-topBar-background {
-    background-color: unset !important;
-}
-.main-topBar-overlay {
+.main-button-primary {
     background-color: var(--spice-main);
 }
 
-.main-entityHeader-shadow,
-.connect-device-list-container {
-    box-shadow: 0 4px 20px rgba(var(--spice-rgb-shadow), 0.2);
+.main-button-primary:active,
+.main-button-primary:focus,
+.main-button-primary:hover {
+    background-color: var(--spice-sidebar);
 }
 
-.main-trackList-playingIcon {
-    filter: grayscale(1);
+.main-view-container button:hover>div[class^='ButtonInner-sc-'] {
+    background-color: var(--spice-button);
 }
 
-.main-trackList-trackListRow.main-trackList-active:hover .main-trackList-rowMarker,
-.main-trackList-trackListRow.main-trackList-active:hover .main-trackList-rowTitle,
-.main-trackList-trackListRow.main-trackList-active:focus-within .main-trackList-rowMarker,
-.main-trackList-trackListRow.main-trackList-active:focus-within .main-trackList-rowTitle {
-    color: var(--spice-button);
+.control-button-heart[aria-checked="true"],
+.main-addButton-active,
+.main-addButton-active:focus,
+.main-addButton-active:hover {
+    color: var(--redBright5);
 }
 
-.main-entityHeader-metaDataText,
-.main-duration-container {
-    color: var(--spice-subtext);
+.main-addButton-active:hover {
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
 }
 
-span.artist-artistVerifiedBadge-badge svg:nth-child(1) {
-    fill: black;
+/* Progress bar */
+.x-progressBar-progressBarBg>div>div {
+    background-color: var(--spice-text);
 }
 
-/* Full window artist background */
-.main-entityHeader-background.main-entityHeader-gradient {
-    opacity: 0.3;
+/* Top bars */
+.main-entityHeader-backgroundColor,
+.main-actionBarBackground-background,
+.main-view-container main[aria-label="Spotify – Web Player"]>div:first-child {
+    display: none;
 }
 
-.main-entityHeader-container.main-entityHeader-withBackgroundImage,
-.main-entityHeader-background,
-.main-entityHeader-background.main-entityHeader-overlay:after {
-    height: 100vh;
+.main-topBar-background {
+    background-color: var(--spice-main) !important;
 }
 
-.main-entityHeader-withBackgroundImage .main-entityHeader-headerText {
-    justify-content: center;
+.main-entityHeader-withBackgroundImage {
+    background-color: rgba(var(--spice-rgb-player), 0.2);
 }
 
-.main-entityHeader-container.main-entityHeader-nonWrapped.main-entityHeader-withBackgroundImage {
-    padding-left: 9%;
+/* Sidebar */
+.main-navBar-navBar li:hover>div,
+.main-navBar-navBar li:hover>a:not(.main-navBar-navBarLinkActive),
+.spicetify-playlist-list li:hover {
+    background-color: var(--spice-main);
 }
 
-.main-entityHeader-background.main-entityHeader-overlay:after {
-    background-image: linear-gradient(transparent,transparent),linear-gradient(var(--spice-main), var(--spice-main));
-}
-
-.artist-artistOverview-overview .main-entityHeader-withBackgroundImage h1 {
-    font-size: 175px !important;
-    line-height: 175px !important;
-}
-
-/** Hightlight selected playlist */
-.main-rootlist-rootlistItemLink.main-rootlist-rootlistItemLinkActive {
-    background: var(--spice-button);
+#spicetify-sticky-list li:hover>div {
     border-radius: 4px;
-    padding: 0 10px;
-    margin: 0 5px 0 -10px;
 }
 
-.main-navBar-navBarLinkActive {
-    background: var(--spice-button);
+/* Scrollbar */
+.os-theme-spotify>.os-scrollbar-horizontal,
+.os-theme-spotify>.os-scrollbar-vertical {
+    padding: 4px;
 }
 
-div.GlueDropTarget.personal-library >*.active {
-    background: var(--spice-button) !important;
+.os-theme-spotify.os-host-transition>.os-scrollbar-horizontal>.os-scrollbar-track>.os-scrollbar-handle,
+.os-theme-spotify.os-host-transition>.os-scrollbar-vertical>.os-scrollbar-track>.os-scrollbar-handle {
+    background-color: var(--decorative-base);
+    border-radius: 6px;
 }
 
-.main-contextMenu-menu {
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #575268;
+    border-radius: 4px;
+}
+
+/* Home */
+.main-home-homeHeader {
+    display: none;
+}
+
+.main-home-content>section:first-child>.main-gridContainer-gridContainer>div {
+    background-color: var(--spice-card);
+}
+
+.main-home-content>section:first-child>.main-gridContainer-gridContainer>div:hover {
+    background-color: var(--spice-misc);
+}
+
+.main-gridContainer-gridContainer>div,
+.main-gridContainer-gridContainer>div>div>div {
+    border-radius: 6px;
+}
+
+/* Cards */
+.main-card-card {
+    border-radius: 6px;
+}
+
+.main-card-imageContainer {
+    margin: -16px -16px 16px -16px;
+}
+
+.main-cardImage-imageWrapper,
+.main-cardImage-image {
+    border-radius: 6px 6px 0 0;
+}
+
+/* Settings */
+input:checked~.x-toggle-indicatorWrapper {
+    background-color: var(---overlay1);
+}
+
+input:hover:not([disabled]):not(:active)~.x-toggle-indicatorWrapper {
     background-color: var(--spice-button-active);
 }
 
-.main-contextMenu-menuHeading,
-.main-contextMenu-menuItemButton,
-.main-contextMenu-menuItemButton:not(.main-contextMenu-disabled):focus,
-.main-contextMenu-menuItemButton:not(.main-contextMenu-disabled):hover {
+select option:checked {
     color: var(--spice-text);
+    font-weight: bold;
 }
 
-.main-playPauseButton-button {
+/* Animated equalizer */
+/* EQ color classes are specified here in case the js extension is not moved over
+   * The default green eq will be used in this case */
+.catppuccin-eq-rosewater .main-trackList-playingIcon,
+.catppuccin-eq-flamingo .main-trackList-playingIcon,
+.catppuccin-eq-mauve .main-trackList-playingIcon,
+.catppuccin-eq-pink .main-trackList-playingIcon,
+.catppuccin-eq-maroon .main-trackList-playingIcon,
+.catppuccin-eq-red .main-trackList-playingIcon,
+.catppuccin-eq-peach .main-trackList-playingIcon,
+.catppuccin-eq-yellow .main-trackList-playingIcon,
+.catppuccin-eq-green .main-trackList-playingIcon,
+.catppuccin-eq-teal .main-trackList-playingIcon,
+.catppuccin-eq-blue .main-trackList-playingIcon,
+.catppuccin-eq-sky .main-trackList-playingIcon,
+.catppuccin-eq-lavender .main-trackList-playingIcon,
+.catppuccin-eq-white .main-trackList-playingIcon {
+    background-size: cover;
+    padding-left: 100%;
+}
+
+.catppuccin-eq-rosewater .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-rosewater.gif");
+}
+
+.catppuccin-eq-flamingo .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-flamingo.gif");
+}
+
+.catppuccin-eq-mauve .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-mauve.gif");
+}
+
+.catppuccin-eq-pink .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-pink.gif");
+}
+
+.catppuccin-eq-maroon .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-maroon.gif");
+}
+
+.catppuccin-eq-red .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-red.gif");
+}
+
+.catppuccin-eq-peach .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-peach.gif");
+}
+
+.catppuccin-eq-yellow .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-yellow.gif");
+}
+
+.catppuccin-eq-green .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-green.gif");
+}
+
+.catppuccin-eq-teal .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-teal.gif");
+}
+
+.catppuccin-eq-blue .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-blue.gif");
+}
+
+.catppuccin-eq-sky .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-sky.gif");
+}
+
+.catppuccin-eq-lavender .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-lavender.gif");
+}
+
+.catppuccin-eq-lavender .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-white.gif");
+}
+
+/* For that small dot on podcasts that notify us of new episodes */
+.main-home-content>section:first-child>.main-gridContainer-gridContainer>div span[aria-label],
+span[aria-label="New episode"],
+span[aria-label="New Podcast Episode"] {
+    background: var(--spice-accent, var(--spice-text));
+}
+
+/* Modals */
+.GenericModal[aria-label="Already added"]>div {
+    background-color: var(--spice-card);
+    color: var(--spice-subtext);
+}
+
+.GenericModal[aria-label="Already added"] button:first-child {
+    color: var(--spice-button-active);
+}
+
+.GenericModal[aria-label="Already added"] button:first-child:hover {
+    color: var(--spice-notification-error);
+}
+
+.GenericModal[aria-label="Already added"] button:last-child:hover>div {
     background-color: var(--spice-button);
-    color: var(--spice-main);
 }
 
-/** Queue page header */
-.queue-queue-title,
-.queue-playHistory-title {
-    color: var(--spice-text) !important;
-}
-
-/** Cards */
-.main-cardImage-imageWrapper {
-    background-color: transparent;
-}
-
-/** Sidebar */
-.main-rootlist-rootlistDivider {
-    margin-bottom: 8px;
-}
-
-.main-rootlist-rootlistPlaylistsScrollNode {
-    padding: 0;
-}
-
-#spicetify-playlist-list {
-    padding-top: 8px;
-}
-.main-collectionLinkButton-collectionLinkButton .main-collectionLinkButton-icon,
-.main-collectionLinkButton-collectionLinkButton .main-collectionLinkButton-collectionLinkText {
-    opacity: 1;
-}
-
-.link-subtle {
-    color: var(--spice-text);
-}
-
-/** Player bar */
-.main-nowPlayingBar-nowPlayingBar {
-    height: var(--player-bar-height);
-}
-
-/** Buddy bar */
-.main-buddyFeed-activityMetadata .main-buddyFeed-artistAndTrackName a,
-.main-buddyFeed-activityMetadata .main-buddyFeed-username a,
-.main-buddyFeed-activityMetadata .main-buddyFeed-playbackContextLink {
-    color: var(--spice-text);
+.main-rootlist-rootlistItemLink:link,
+.main-rootlist-rootlistItemLink:visited {
+    z-index: 1;
 }
