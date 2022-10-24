@@ -6,6 +6,11 @@
 <p align=center> <a href=https://purpurite.ehan.dev> Website </a> - <a href=https://github.com/purpurite> GitHub </a> </p>
 
 <br />
+
+-  [Installation](#installation)
+-  [Screenshots](#screenshots)
+-  [Special Thanks](#special-thanks)
+
 <br />
 
 > This theme is for [Spotify Desktop](https://www.spotify.com/download), using [Spicetify](https://spicetify.app/). Spotify themes are not officially supported by Spotify, they depend on Spicetify and compatibility may vary across devices. 
@@ -35,3 +40,7 @@
   7.  Apply changes to Spotify.
   
       * Run `spicetify apply`
+
+## Screenshots
+
+![Spotify ]
