@@ -10,5 +10,28 @@
 
 > This theme is for [Spotify Desktop](https://www.spotify.com/download), using [Spicetify](https://spicetify.app/). Spotify themes are not officially supported by Spotify, and they're compatibility depends on Spicetify and may vary across devices. 
 
-# Installation
+## Installation
 
+  1.  Download and install spotify and spicetify.
+  
+      * Follow [spicetify's documentation](https://spicetify.app/docs/advanced-usage/installation).
+
+  2.  Locate your spicetify themes directory.
+  
+      * `~/.config/spicetify/Themes` on Linux & MacOS
+      * `%appdata%\spicetify\Themes` on Windows
+      * If confused, run `spicetify -c` in a terminal or command promt to find the folder
+  
+  4.  Download the latest GitHub Release of purpurite's spicetify theme.
+  
+  5.  Unzip the downloaded release into a new folder named `purpurite` under your spicetify themes folder.
+
+  6.  Set your theme to `purpurite` in your spicetify config.
+  
+      * Open a terminal or command prompt
+      * Run `spicetify config current_theme purpurite`
+      * Run `spicetify config color_scheme purpurite`
+      
+  7.  Apply changes to Spotify.
+  
+      * Run `spicetify apply`
