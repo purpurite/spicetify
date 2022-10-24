@@ -7,3 +7,8 @@
 
 <br />
 <br />
+
+> This theme is for [Spotify Desktop](https://www.spotify.com/download), using [Spicetify](https://spicetify.app/). Spotify themes are not officially supported by Spotify, and they're compatibility depends on Spicetify and may vary across devices. 
+
+# Installation
+
