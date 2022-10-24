@@ -27,7 +27,7 @@
       * `%appdata%\spicetify\Themes` on Windows
       * If confused, run `spicetify -c` in a terminal or command promt to find the folder
   
-  4.  Download the latest GitHub Release of purpurite's spicetify theme.
+  4.  Download the latest [GitHub Release](https://github.com/purpurite/spicetify/releases) of purpurite's spicetify theme.
   
   5.  Unzip the downloaded release into a new folder named `purpurite` under your spicetify themes folder.
 
@@ -43,4 +43,3 @@
 
 ## Screenshots
 
-![Spotify ]
